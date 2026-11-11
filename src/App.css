@@ -164,7 +164,11 @@
 .ticks {
   position: relative;
   width: 100%;
+<<<<<<< HEAD
 
+=======
+}
+>>>>>>> tp3
   &::before,
   &::after {
     content: '';
@@ -181,4 +185,150 @@
     right: 0;
     border-right-color: var(--border);
   }
+<<<<<<< HEAD
 }
+=======
+.fiche{
+
+    width: 350px;
+    padding: 20px;
+    margin: 30px auto;
+    border: 2px solid navy;
+    border-radius: 15px;
+    text-align: center;
+  }
+.photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.fiche h1 {
+    color: navy;
+    font-size: 25px;
+  }
+
+.btn {
+  background-color: navy;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;      
+  justify-content: center;
+  gap: 15px;           
+  margin-top: 15px;
+  width: 100%;
+}
+
+
+.Header {
+  background-color: #142d4e;
+  padding: 30px 20px;
+
+ 
+}
+
+.Header p {
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.Navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.Navbar a {
+  color: cornflowerblue;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.Navbar a:hover {
+  color: #a9c9ed;
+}
+.actions {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 15px;
+}
+
+.ajouter {
+  background-color: #142d4e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ajouter:hover {
+  background-color: #203f65;
+  transform: scale(1.05);
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.filterlabel {
+  font-size: 18px;
+  font-weight: bold;
+  color: #142d4e;
+}
+
+.filterselect {
+  padding: 8px 14px;
+  font-size: 16px;
+  border: 2px solid #142d4e;
+  border-radius: 8px;
+  background-color: white;
+  color: #142d4e;
+  cursor: pointer;
+  outline: none;
+}
+
+.filterselect:focus {
+  border-color: cornflowerblue;
+}
+.Footer {
+  background-color: #142d4e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.Footer p {
+  margin: 5px;
+  font-size: 14px;
+}
+
+
+ 
+
+>>>>>>> tp3
