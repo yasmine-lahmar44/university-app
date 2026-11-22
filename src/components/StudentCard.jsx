@@ -3,44 +3,46 @@ import '../App.css';
 import { useState } from 'react';
 
 
-function StudentCard(props) {
-  const [Visibles, setCoordonneesVisibles] = useState(false);
-  function basculerInformations(){
-    setCoordonneesVisibles(!Visibles)
-  }
+function StudentCard({etudiant, onModifier, onSupp}) {
+  const [Visibles, setVisibles] = useState(false);
+
 
   return (
   
   <div className='fiche'>
-            <img
-                src={props.image}
+    {etudiant.image &&(
+         <img
+                src={etudiant.image}
                 alt="Photo étudiant"
                 className="photo"
             />
+    )}
+         
     <h1>Fiche Etudiant</h1>
-    <strong>Nom et prénom:</strong>{props.nom} {props.prénom}<br></br>
+    <strong>Nom et prénom:</strong>{etudiant.nom} {etudiant.prenom}<br></br>
     {Visibles && (
       <>
-      <strong>Email:</strong> {props.email}
-      <strong>Tel:</strong> {props.tel} 
+      <strong>Email:</strong> {etudiant.email}
+      <strong>Tel:</strong> {etudiant.tel} 
       </>
       )}
     
-    <strong>Filiére:</strong>{props.filiére}<br></br>
-    <strong>Année d'etude:</strong>{props.année}<br></br>
-    <strong>Ville:</strong>{props.ville}
+    <strong>Filiére:</strong>{etudiant.filiére}<br></br>
+    <strong>Année d'etude:</strong>{etudiant.anne}<br></br>
+    <strong>Groupe</strong>{etudiant.grp}<br></br>
+    <strong>Ville:</strong>{etudiant.ville}
     <br /><br />
     
     <button className="btn">Contacter l'étudiant</button>
-    <button onClick={basculerInformations} className='btn'>{Visibles
+    <button onClick={() => setVisibles(!Visibles)} className='btn'>{Visibles
       ? "Masquer les informations"
       : "Afficher les informations"
     }</button>
-    <button onClick={() => props.modifierEtudiants(props.email)} className='btn'>Modifier</button>
-    <button onClick={() => props.suppEtudiant(props.email)} className='btn'>Supprimer</button>
+    <button onClick={() => onModifier(etudiant)} className='btn'>Modifier</button>
+    <button onClick={() => onSupp(etudiant.email)} className='btn'>Supprimer</button>
 
   </div>
   )
 }
 
-export default StudentCard
+export default StudentCard;

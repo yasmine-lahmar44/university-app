@@ -164,11 +164,7 @@
 .ticks {
   position: relative;
   width: 100%;
-<<<<<<< HEAD
-
-=======
 }
->>>>>>> tp3
   &::before,
   &::after {
     content: '';
@@ -185,9 +181,6 @@
     right: 0;
     border-right-color: var(--border);
   }
-<<<<<<< HEAD
-}
-=======
 .fiche{
 
     width: 350px;
@@ -327,8 +320,88 @@
   margin: 5px;
   font-size: 14px;
 }
+form{
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0,1);
+  cursor: pointer;
+}
+.btn{
+  background-color: #142d4e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover{
+  background-color: #203f65;
+  transform: scale(1.05);
+}
+#lab{
+  color: cornflowerblue;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.5;
+}
+.img {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #14284b;
+  border-radius: 10px;
+  background-color: #f5f7fb;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.img:hover {
+  background-color: #eaeef7;
+}
+
+
+.img::file-selector-button {
+  background-color: #14284b; 
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.img::file-selector-button:hover {
+  background-color: #1f3a6e;
+}
+.h2{
+  color:  #203f65;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.5;
+}
 
 
  
 
->>>>>>> tp3
